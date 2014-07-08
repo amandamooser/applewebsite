@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<script src="file:///C:/Users/AMooser/Documents/ss1.html" type="text/javascript"></script>
+
+</script>
+
+<style type="text/css">
+
+body {
+    overflow-y:scroll;
+    background:#fff;
+}
+
+#recipe-name {
+    font-family: Brush Script Mt;
+    font-size: 75px;
+    font-style: italic;
+    text-align: center;
+    color: #FFE100
+}
+
+#text {
+    font-family: arial narrow;
+    font-size: 20px;
+    font-style: italic;
+    color: #470300;
+    margin: 25px;
+}
+
+#ingredients {
+    font-family: arial narrow;
+    front-size: 17px;
+    color: #7A0501;
+    list-style-type: circle;
+    margin: 50px;
+}
+
+#directions {
+    font-family: arial narrow;
+    front-size: 19px;
+    color: #470300;
+    margin: 50px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.profile img {
+max-width: 500px;
+border-radius:60%;
+}
+
+
+
+</style>
+
+
+</head>
+
+<body> 
+
+<div style="background: none repeat scroll 0% 0% #FFB192; padding: 5px 8px; float: center; margin: 50px">
+ <div class="profile">
+  <figure>  
+    <img src="http://cdn.instructables.com/FAC/BL4F/G0ZWH8CK/FACBL4FG0ZWH8CK.MEDIUM.jpg" alt="profile" align="middle"  
+     max-height: 200px;
+     background-color: #FFB192;
+     padding: 10px";/>  
+  </figure>  
+
+</div>
+</div>
+
+  <header>  
+    <hgroup>  
+      <h1 id="recipe-name">Candied Apples</h1>  
+    </hgroup>  
+  </header>  
+
+<div style="background: none repeat scroll 0% 0% #FFB192; padding: 5px 8px; float: center; margin: 50px">
+<div style="text-align: left"><b> 
+
+  <section>  
+  
+  <h2 id="text">stuff about the recipe and how good it is</h2> 
+    <ul id="ingredients">
+     <li>ingredients</li> 
+     <li>ingredients</li>
+     <li>ingredients</li>
+     <li>ingredients</li>
+     <li>ingredients</li>
+    </ul>
+   <p id="directions">this is a recipe for really good music, mozart lacrimosa, bach erbarme dich, bach we sit down in tears, Samuel Barber - Adagio For Strings, Mozart - Der Vogelfänger Bin Ich Ja, Carl Orff - O Fortuna, Giulio Caccini - Ave Maria, Smetana - Vltava, Bizet - Au Fond Du Temple Saint, Maurice Ravel - Boléro, Clément Philibert - Duo Des Fleurs, Mozart - Der Hölle Rache Kocht In Meinem Herzen, Bach - Badinerie, Beethoven - Symphony 6 , George Gershwin - Rhapsody In Blue, Charles Saint- Danse Macabre, Beethoven - Mondscheinsonate, Giuseppe Verdi - La Donna và Mobile, Georges Bizet - Habanera, Giacomo Antonio Domenico - Nessun Dorma, Johann Strauss - An Der Schönen Blauen Donau, Jean Sibelius - Finlandia, Aram Ilich - Adagio Of Spartacus And Phrygia</p> 
+    
+  </section>  
+
+<a href="file:///C:/Users/AMooser/Documents/lol%20shoooot%20PLS%20I%20AM%20TRYING%20SO%20HARD%20FOR%20NO%20REASON.html" class="back back-right" title="back to intro"> RETURN TO HOME </a>
+
+</div>
+</div>
+
+
+<script src="file:///C:/Users/AMooser/Documents/ss2.html" type="text/javascript"></script>
+<script src="file:///C:/Users/AMooser/Documents/ss3.html" type="text/javascript"></script>
+
+</body>
+
+
+</html>

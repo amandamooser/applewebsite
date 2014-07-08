@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<script src="file:///C:/Users/AMooser/Documents/ss1.html" type="text/javascript"></script>
+
+</script>
+
+<title>Everything About Apples!</title>
+
+<style type="text/css">
+
+
+html, body,
+.container {
+position:relative;
+width:100%;
+height:100%;
+padding:0px;
+margin:0px;
+}
+
+body {
+overflow-y:scroll;
+background:#fff;
+}
+
+body a:hover{
+}
+
+.splitlayout {
+position:relative;
+overflow-x:hidden;
+min-height:100%;
+width:100%;
+}
+
+/* Intro sides */
+.side {
+position: fixed;
+top:0px;
+z-index:100;
+width:50%;
+height:100%;
+text-align:center;
+-webkit-backface-visibility: hidden;
+}
+
+.open-left .side,
+.open-right .side {
+}
+
+.overlay {
+position:absolute;
+top:0px;
+left:0px;
+z-index:499;
+visibility:hidden;
+width:100%;
+height:100%;
+opacity:0;
+}
+
+
+.side-left {
+left:0px;
+background:#FF3C31;
+color:#fff;
+outline:1px solid #FF3C31;
+}
+
+.side-right {
+right:0px;
+background: #fff;
+color:#FF3C31;
+outline:1px solid #fff; 
+}
+
+/* Intro content */
+.intro-content {
+position:absolute;
+top:50%;
+left:50%;
+padding:0 1em;
+width:50%;
+-webkit-transform: translateY(-50%) translateX(-50%);
+transform: translateY(-50%) translateX(-50%);
+}
+
+.profile img {
+max-width:100%;
+border-radius:50%;
+opacity: 1;
+}
+
+.intro-content h1 > span {
+display:block;
+white-space:nowrap;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+.intro-content h1 > span:first-child {
+font-size:55px;
+font-family: georgia, serif;
+letter-spacing:-1px;
+}
+
+.intro-content h1 > span:hover {
+font-size:65px;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+.intro-content h1 > span:nth-child(2) {
+position:relative;
+margin-top:-15px;
+text-transform:uppercase;
+letter-spacing:2px;
+font-size:11px;
+font-family:calibri;
+font-weight:100;
+}
+
+.intro-content h1 > span:nth-child(2):before {
+position:absolute;
+top:0px;
+left:25%;
+width:50%;
+height:2px;
+background:#fff;
+}
+
+.side-right .intro-content h1 > span:nth-child(2):before {
+background:#FF3C31;
+}
+
+.back {
+position:fixed;
+top:50px;
+z-index:9999;
+display:block;
+visibility:hidden;
+width:50px;
+height:50px;
+border-radius:50%;
+color:#FF3C31;
+text-align:center;
+font-size:22px;
+line-height:44px;
+opacity:0;
+font-family:Helvetica;
+text-decoration:none;
+}
+
+.back-left {
+left:12.5%;
+-webkit-transform:translateX(-50%);
+transform:translateX(-50%);
+}
+
+.back-right {
+right:12.5%;
+-webkit-transform:translateX(50%);
+transform:translateX(50%);
+color:#fff;
+}
+
+.open-right .back-left,
+.open-left .back-right {
+visibility: visible;
+opacity:1;
+-webkit-transition-delay:0.3s;
+transition-delay:0.3s;
+pointer-events:auto;
+}
+
+.back:hover {
+opacity:0.3;
+}
+
+/* Pages */
+
+.page {
+position:relative;
+top:0px;
+overflow:auto;
+min-height:100%;
+width:75%;
+height:auto;
+font-size:12px;
+font-family:calibri;
+-webkit-backface-visibility:hidden;
+}
+
+.page-right {
+left:25%;
+background:#BCE59A;
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+
+.splitlayout.open-right {
+background:#BCE59A;
+}
+
+.page-left {
+left:0px;
+background:#FFF98F;
+text-align: right;
+-webkit-transform: translateX(-100%);
+transform: translateX(-100%);
+}
+
+.splitlayout.open-left {
+background:#FFF98F;
+}
+
+
+/* Inner page content */
+.page-inner {
+padding:2em;
+}
+
+.page-inner section {
+padding-bottom:1em;
+}
+
+.page-inner p > a {
+color:#011200;
+text-decoration:none;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+.page-inner p > a:hover {
+opacity:0.3;
+text-decoration:none;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+.page-inner ol, ul {margin-right:10px;list-style-position:inside}
+.page-inner ul {list-style-type:none;border-right:2px solid #fff;padding-right:8px;}
+
+
+/* Navigation */
+
+#category {
+width:900px;
+background:#fff;
+border:1px solid #0000;
+padding:15px;
+text-align:center;
+display:inline-block;
+margin-left:20px;
+margin-right:10px;
+margin-top:10px;
+margin-bottom:20px;
+}
+
+.navititle {
+background:#fff;
+padding:5px;
+text-align:center;
+font-family:georgia;
+letter-spacing:3px;
+color:#011200;
+font-size:30px;
+margin-bottom:10px;
+}
+
+.navilinks {
+text-align:center;
+letter-spacing:1px;
+}
+
+.navilinks a {
+display:inline-block;
+margin-top:2px;
+width:225px;
+padding:75px;
+background:#fff;
+text-decoration:none;
+color:#011200;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+.navilinks a:hover{
+letter-spacing:4px;
+color:#fff;
+background:#E8D84E;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+/* All transitions */
+.side,
+.page {
+-webkit-transition:-webkit-transform 0.6s;
+transition:transform 0.6s;
+}
+
+.overlay {
+-webkit-transition:opacity 0.6s, visibility 0.1s 0.6s;
+transition:opacity 0.6s, visibility 0.1s 0.6s;
+}
+
+.intro-content {
+-webkit-transition:-webkit-transform 0.6s, top 0.6s;
+transition:transform 0.6s, top 0.6s;
+}
+
+.intro-content h1,
+.back {
+-webkit-transition:opacity 0.3s;
+transition:opacity 0.3s;
+}
+
+/* Open and close */
+.reset-layout .page,
+.splitlayout.open-right .page-left,
+.splitlayout.open-left .page-right,
+.splitlayout.close-right .page-left,
+.splitlayout.close-left .page-right {
+position: absolute;
+overflow: hidden;
+height: 100%;
+}
+
+.splitlayout.open-right .page-right,
+.splitlayout.open-left .page-left {
+position: relative;
+overflow: auto;
+height: auto;
+}
+
+.open-right .side-left .overlay,
+.open-left .side-right .overlay {
+visibility: visible;
+opacity: 1;
+-webkit-transition: opacity 0.6s;
+transition: opacity 0.6s;
+}
+
+/* Right side open */
+.open-right .side-left {
+-webkit-transform: translateX(-60%);
+transform: translateX(-60%);
+}
+
+.open-right .side-right {
+z-index: 200;
+-webkit-transform: translateX(-150%);
+transform: translateX(-150%);
+}
+
+.close-right .side-right {
+z-index: 200;
+}
+
+.open-right .side-right .intro-content {
+-webkit-transform: translateY(-50%) translateX(0%) scale(0.6);
+transform: translateY(-50%) translateX(0%) scale(0.6);
+}
+
+.open-right .page-right {
+-webkit-transform: translateX(0%);
+transform: translateX(0%);
+}
+
+/* Left side open */
+.open-left .side-right {
+-webkit-transform: translateX(60%);
+transform: translateX(60%);
+}
+
+.open-left .side-left {
+z-index: 200;
+-webkit-transform: translateX(150%);
+transform: translateX(150%);
+}
+
+.close-left .side-left {
+z-index: 200;
+}
+
+.open-left .side-left .intro-content {
+-webkit-transform: translateY(-50%) translateX(-100%) scale(0.6);
+transform: translateY(-50%) translateX(-100%) scale(0.6);
+}
+
+.open-left .page-left {
+-webkit-transform: translateX(0%);
+transform: translateX(0%);
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+<div class="container">
+<div id="splitlayout" class="splitlayout">
+
+<div class="intro">
+
+<div class="side side-left">
+
+<div class="intro-content">
+<div class="profile">
+<img src="http://zakupka.tv/Catalog/root/images/f3313054-dcd6-11e2-9582-777dd6d92e21.jpg" alt="profile1">
+
+</div>
+
+<h1>
+<span>Apple Recipies</span>
+<span>for any variety of apple</span></h1>
+</div>
+
+<div class="overlay"></div>
+
+
+</div>
+
+
+<div class="side side-right">
+
+<div class="intro-content">
+<div class="profile">
+<img src="http://fun4friends.net/wp-content/uploads/2012/01/Apple-Fruit1.jpg" alt="profile2">
+</div>
+
+<h1>
+<span>Apple Varieties</span>
+<span>every apple in the orhard</span></h1>
+</div>
+
+<div class="overlay"></div>
+
+</div>
+
+
+<div class="page page-left">
+<div class="page-inner">
+<section>
+
+<div id="category">
+
+<div class="navititle">A Selection of Some of the Best Apple Recipies</div>
+
+<div class="navilinks">
+<a href="file:///C:/Users/AMooser/Documents/candied.html">Candied Apples</a><br>
+<a href="file:///C:/Users/AMooser/Documents/pie.html">Apple Pie</a><br>
+<a href="file:///C:/Users/AMooser/Documents/chips.html">Apple Chips</a><br>
+<a href="file:///C:/Users/AMooser/Documents/steussel.html">Apple Streusel</a><br>
+<a href="file:///C:/Users/AMooser/Documents/muffins.html">Apple Muffins</a><br>
+<a href="file:///C:/Users/AMooser/Documents/cobler.html">Apple Cobbler</a><br>
+<a href="/">Apple Crisp</a><br>
+<a href="/">Apple Sause</a><br>
+<a href="/">Apple Cheesecake</a><br>
+<a href="/">Apple Juice</a><br>
+<a href="/">Apple Cookies</a><br>
+<a href="/">Apple Bread</a><br>
+<a href="/">Apple Dip</a><br>
+<a href="/">Apple Dumplings</a><br>
+<a href="/">Apple Bars</a><br>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div class="page page-right">
+<div class="page-inner">
+<section>
+
+<div id="category">
+
+<div class="navititle">An Encyclopedia of the Many Varieties of Apples</div>
+
+<div class="navilinks">
+<a href="file:///C:/Users/AMooser/Documents/braeburn.html">Breaburn</a><br>
+<a href="file:///C:/Users/AMooser/Documents/cortland.html">Cortland</a><br>
+<a href="file:///C:/Users/AMooser/Documents/empire.html">Empire</a><br>
+<a href="file:///C:/Users/AMooser/Documents/fiji.html">Fiji</a><br>
+<a href="file:///C:/Users/AMooser/Documents/gala.html">Gala</a><br>
+<a href="file:///C:/Users/AMooser/Documents/golden%20delicious.html">Golden Delicious</a><br>
+<a href="file:///C:/Users/AMooser/Documents/granny%20smith.html">Granny Smith</a><br>
+<a href="file:///C:/Users/AMooser/Documents/honey%20crisp.html">Honey Crisp</a><br>
+<a href="file:///C:/Users/AMooser/Documents/jonagold.html">Jonagold</a><br>
+<a href="file:///C:/Users/AMooser/Documents/jpnathan.html">Jonathan</a><br>
+<a href="file:///C:/Users/AMooser/Documents/mcintosh.html">McIntosh</a><br>
+<a href="file:///C:/Users/AMooser/Documents/pink%20lady.html">Pink Lady</a><br>
+<a href="file:///C:/Users/AMooser/Documents/red%20delicious.html">Red Delicious</a><br>
+<a href="file:///C:/Users/AMooser/Documents/rome%20beauty.html">Rome Beauty</a><br>
+<a href="file:///C:/Users/AMooser/Documents/york.html">York</a><br>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<br><br>
+
+
+</section>
+</div>
+</div>
+
+<a href="file:///C:/Users/AMooser/Documents/lol%20shoooot%20PLS%20I%20AM%20TRYING%20SO%20HARD%20FOR%20NO%20REASON.html" class="back back-right" title="back to intro">&rarr;</a>
+<a href="file:///C:/Users/AMooser/Documents/lol%20shoooot%20PLS%20I%20AM%20TRYING%20SO%20HARD%20FOR%20NO%20REASON.html" class="back back-left" title="back to intro">&larr;</a>
+
+</div>
+</div>
+
+
+<script src="file:///C:/Users/AMooser/Documents/ss2.html" type="text/javascript"></script>
+<script src="file:///C:/Users/AMooser/Documents/ss3.html" type="text/javascript"></script>
+
+</body>
+
+
+</html>

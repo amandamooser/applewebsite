@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<script src="file:///C:/Users/AMooser/Documents/ss1.html" type="text/javascript"></script>
+
+</script>
+
+<style type="text/css">
+
+body {
+    overflow-y:scroll;
+    background:#fff;
+}
+
+#apple-name {
+    text-align: left;
+    font-family: Colonna MT;
+    font-size: 50px;
+    font-style: italic;
+    margin: 50px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #E8B40C
+}
+
+#text {
+    font-family: arial narrow;
+    font-size: 17px;
+    color: #515729
+}
+
+#title {
+    text-decoration: none;
+    font-family: arial narrow;
+    font-size: 20px;
+    color: #515729
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+</style>
+
+
+</head>
+
+<body> 
+  
+  <header>  
+    <hgroup>  
+      <h1 id="apple-name">Honey Crisp Apple</h1>  
+    </hgroup>  
+  </header>  
+
+<div style="background: none repeat scroll 0% 0% #D9E86D; padding: 5px 8px; float: center; text-align: center; height: 555px; margin: 50px">
+<div style="text-align: left;"><b> 
+ 
+  <figure>  
+    <img src="http://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Braeburn2008.jpg/600px-Braeburn2008.jpg" 
+     style="float:left; 
+     margin:0 150px 0 0; 
+     width: 500px;
+     height: 500px;
+     padding: 10px;
+     border: 2px solid #000;" />  
+  </figure>  
+
+  <section>  
+  
+  <details id="text">  
+   <summary id="title">Details</summary>  
+      <ul>  
+        <li>Firm to the touch</li>  
+        <li>blah</li>  
+        <li>blah</li>  
+        <li>blah</li>
+        <li>blah</li> 
+        <li>blah</li> 
+        <li>its an apple</li>  
+      </ul>  
+  </details>    
+  
+  </section>  
+
+<a href="file:///C:/Users/AMooser/Documents/lol%20shoooot%20PLS%20I%20AM%20TRYING%20SO%20HARD%20FOR%20NO%20REASON.html" class="back back-right" title="back to intro"> RETURN TO HOME </a>
+
+</div>
+</div>
+
+
+<script src="file:///C:/Users/AMooser/Documents/ss2.html" type="text/javascript"></script>
+<script src="file:///C:/Users/AMooser/Documents/ss3.html" type="text/javascript"></script>
+
+</body>
+
+
+</html>
